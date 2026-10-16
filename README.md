@@ -19,12 +19,12 @@ Source for [valisportal.com](https://valisportal.com) — static site built with
 | `npm run build`   | Build the production site to `./dist/`   |
 | `npm run preview` | Preview the production build locally     |
 
-## Deploying to Cloudflare Pages
+## Deploying to Cloudflare
 
-The repo is wired to Cloudflare Pages. Settings:
+The repo is wired to Cloudflare (Workers static assets, git-connected). Settings:
 
-- **Framework preset:** Astro (sets the commands below automatically)
 - **Build command:** `npm run build`
-- **Build output directory:** `dist`
+- **Deploy command:** `npx wrangler deploy`
+- `wrangler.jsonc` points the Worker at `dist/`
 
 `.nvmrc` pins Node 22 (Astro requires ≥18.20.8; Cloudflare Pages reads `.nvmrc` automatically).
