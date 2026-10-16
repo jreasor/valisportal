@@ -1,0 +1,65 @@
+---
+import "../styles/global.css";
+
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VALIS — software, engineered deliberately</title>
+    <meta
+      name="description"
+      content="VALIS is an independent software studio building deliberate, dependable systems for the modern web."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <img class="wordmark" src="/valis_logo.svg" alt="VALIS" />
+      <nav>
+        <a href="mailto:contact@valisportal.com">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img
+          class="wordmark-hero"
+          src="/valis_logo.svg"
+          alt="VALIS"
+          width="2080"
+          height="500"
+        />
+        <p class="tagline mono">&gt; software, engineered deliberately</p>
+        <p class="lede">
+          VALIS is an independent software studio. We design and build
+          deliberate, dependable systems for the modern web — from first
+          prototype to production.
+        </p>
+      </section>
+
+      <section class="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li><span class="label">Sales</span><a href="mailto:sales@valisportal.com">sales@valisportal.com</a></li>
+          <li><span class="label">Support</span><a href="mailto:help@valisportal.com">help@valisportal.com</a></li>
+          <li><span class="label">General</span><a href="mailto:contact@valisportal.com">contact@valisportal.com</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; {year} VALIS</span>
+      <a href="https://valisportal.com">valisportal.com</a>
+    </footer>
+  </body>
+</html>

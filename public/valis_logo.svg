@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2080 500" role="img" aria-label="VALIS">
+  <defs>
+    <clipPath id="letters">
+      <path d="M19,24 L100,245 L136,342 C152,400 168,445 234,477 L312,477 C378,445 394,400 410,342 L445,245 L525,24 L421,24 L272,393 L122,24 Z"/>
+      <path d="M705,24 Q650,58 622,133 L484,478 L589,478 L752,99 L912,478 L1019,478 Q878,84 791,24 Z"/>
+      <path d="M1041,24 H1147 V396 H1388 V478 H1160 L1046,398 H1041 Z"/>
+      <path d="M1457,24 H1559 V478 H1457 Z"/>
+      <path d="M1762,24 H2036 V112 L1751,138 L1745,197 L1929,204 Q2037,240 2053,300 V396 L1952,478 H1653 V398 H1948 V303 L1749,287 L1652,212 L1659,98 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#letters)">
+    <rect x="14" y="25"  width="2048" height="6"  fill="#9cc1d9"/>
+    <rect x="14" y="60"  width="2048" height="10" fill="#adc0e9"/>
+    <rect x="14" y="98"  width="2048" height="12" fill="#b7b8e4"/>
+    <rect x="14" y="133" width="2048" height="15" fill="#beb5ea"/>
+    <rect x="14" y="169" width="2048" height="16" fill="#bcb5e8"/>
+    <rect x="14" y="204" width="2048" height="16" fill="#a6b8e8"/>
+    <rect x="14" y="237" width="2048" height="18" fill="#99c4ed"/>
+    <rect x="14" y="270" width="2048" height="19" fill="#8ad0ec"/>
+    <rect x="14" y="302" width="2048" height="19" fill="#78d6ec"/>
+    <rect x="14" y="333" width="2048" height="19" fill="#60d6e7"/>
+    <rect x="14" y="364" width="2048" height="19" fill="#4ad1e3"/>
+    <rect x="14" y="394" width="2048" height="19" fill="#0a9ec6"/>
+    <rect x="14" y="424" width="2048" height="19" fill="#0890c1"/>
+    <rect x="14" y="454" width="2048" height="21" fill="#0a88c4"/>
+  </g>
+</svg>

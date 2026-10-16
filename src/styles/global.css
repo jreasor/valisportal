@@ -1,0 +1,214 @@
+:root {
+  --bg: #0a0b10;
+  --text: #e9e9f0;
+  --muted: #9a9aaf;
+  --accent-lav: #cfc4e8;
+  --accent-cyan: #19c8f2;
+  --line: #23242e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mono {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/* Faint scanline overlay — the single retro texture, capped. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.018) 0px,
+    rgba(255, 255, 255, 0.018) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---------- header ---------- */
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-header .wordmark {
+  width: 9.5rem;
+  height: auto;
+  display: block;
+}
+
+.site-header nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.15s ease;
+}
+
+.site-header nav a:hover {
+  color: var(--text);
+}
+
+/* ---------- hero ---------- */
+
+.hero {
+  padding: 5.5rem 0 4.5rem;
+}
+
+.hero .wordmark-hero {
+  width: min(100%, 30rem);
+  height: auto;
+  margin: 0 0 2.25rem;
+}
+
+.tagline {
+  font-size: 0.9375rem;
+  color: var(--accent-cyan);
+  margin: 0 0 1.25rem;
+}
+
+.lede {
+  color: var(--muted);
+  margin: 0 0 2rem;
+  max-width: 36rem;
+}
+
+.a11y {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---------- contact ---------- */
+
+.contact {
+  padding: 2.5rem 0 4rem;
+  border-top: 1px solid var(--line);
+}
+
+.contact h2 {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 2.5rem 0 1.25rem;
+}
+
+.contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 34rem;
+}
+
+.contact li {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  padding: 0.65rem 0.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.contact li:last-child {
+  border-bottom: none;
+}
+
+.contact .label {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  width: 4.5rem;
+  flex-shrink: 0;
+}
+
+.contact a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  transition: color 0.15s ease;
+}
+
+.contact a:hover {
+  color: var(--accent-lav);
+}
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.site-footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--text);
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 420px) {
+  .hero {
+    padding: 3.5rem 0 3rem;
+  }
+
+  .hero .wordmark-hero {
+    width: 100%;
+  }
+
+  .contact li {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
