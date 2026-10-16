@@ -1,0 +1,11 @@
+{
+  // Worker name -> workers.dev URL and Pages-style project name
+  "name": "valisportal",
+  "compatibility_date": "2026-10-01",
+  // Static-assets-only Worker: serves the Astro build output, no script needed
+  "assets": {
+    "directory": "./dist",
+    // serve valisportal.com, not the www-only default asset
+    "html_handling": "auto-trailing-slash"
+  }
+}
