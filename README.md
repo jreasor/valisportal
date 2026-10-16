@@ -6,7 +6,8 @@ Source for [valisportal.com](https://valisportal.com) — static site built with
 
 - `src/pages/index.astro` — the single home page
 - `src/styles/global.css` — styles (plain CSS, no framework)
-- `public/valis_logo.svg` — hand-coded vector recreation of the wordmark (`valis_logo.png` is the original raster, kept for reference)
+- `public/valis_logo.svg` — vector wordmark traced from `valis_logo_transparent.png` (pixel-exact vs the PNG at 1:1); the asset the site serves
+- `public/valis_logo_transparent.png` — the transparent raster wordmark (trace source for the SVG)
 - `public/favicon.svg` — favicon (striped V from the wordmark geometry)
 
 ## Commands
