@@ -89,7 +89,8 @@ main {
 /* ---------- hero ---------- */
 
 .hero {
-  padding: 5.5rem 0 4.5rem;
+  /* bottom value = the single gap between the lede and the contact divider */
+  padding: 5.5rem 0 3rem;
 }
 
 .hero .wordmark-hero {
@@ -106,7 +107,7 @@ main {
 
 .lede {
   color: var(--muted);
-  margin: 0 0 2rem;
+  margin: 0;
   max-width: 36rem;
 }
 
@@ -200,7 +201,7 @@ main {
 
 @media (max-width: 420px) {
   .hero {
-    padding: 3.5rem 0 3rem;
+    padding: 3.5rem 0 2rem;
   }
 
   .hero .wordmark-hero {
