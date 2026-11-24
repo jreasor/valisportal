@@ -120,6 +120,37 @@ main {
   white-space: nowrap;
 }
 
+/* ---------- products ---------- */
+
+.products {
+  margin-top: 3rem;
+}
+
+.products ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.products li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.products .label {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+}
+
+.product-desc {
+  margin: 0;
+  opacity: 0.85;
+  line-height: 1.5;
+}
+
 /* ---------- contact ---------- */
 
 .contact {

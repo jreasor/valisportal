@@ -12,7 +12,7 @@ const year = new Date().getFullYear();
     <title>VALIS: software - evolved</title>
     <meta
       name="description"
-      content="VALIS is an independent software studio building deliberate, dependable systems for the modern web."
+      content="VALIS is an independent software product company building modern software applications with a retro flare."
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +26,7 @@ const year = new Date().getFullYear();
     <header class="site-header">
       <img class="wordmark" src="/valis_logo.svg" alt="VALIS" />
       <nav>
-        <a href="mailto:contact@valisportal.com">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -41,11 +41,29 @@ const year = new Date().getFullYear();
         />
         <p class="tagline mono">&gt; software - evolved</p>
         <p class="lede">
-          VALIS is an independent software studio.<br><br>Contact us to learn more and start collaborating!
+          VALIS is an independent software product company.<br><br>Contact us to learn more!
         </p>
       </section>
 
-      <section class="contact">
+      <section id="products" class="products" aria-labelledby="products-heading">
+        <h2 id="products-heading" class="mono">&gt; products - in development</h2>
+        <ul>
+          <li>
+            <span class="label">Pixel-Dispatch</span>
+            <p class="product-desc">
+              A retro-styled VS Code extension and visual workspace for managing AI coding agents.
+            </p>
+          </li>
+          <li>
+            <span class="label">Run Away!</span>
+            <p class="product-desc">
+              A fitness-driven horror survival game for Apple Watch and iPhone where player speed is tied to wrist motion.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="contact">
         <h2>Contact</h2>
         <ul>
           <li><span class="label">Sales</span><a href="mailto:sales@valisportal.com">sales@valisportal.com</a></li>
